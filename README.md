@@ -18,6 +18,11 @@ Repository is divided into three main packages:
 - **Personalize Profile** With profile/cover photo and personal posts.
 - **Authentication & Authorization** with Password reset functionality.
 
+## To-Do
+
+- **Profile** Update format of the profile page to include user details and links to other accounts such as Twitch, YouTube, etc.
+- **Posts** Implement hyperlinking and thumbnails in posts
+
 ## Quick Installation
 
 ```sh
