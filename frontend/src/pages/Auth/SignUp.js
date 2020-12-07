@@ -45,7 +45,7 @@ const Form = styled.div`
   padding: ${(p) => p.theme.spacing.md};
   border-radius: ${(p) => p.theme.radius.sm};
   background-color: rgba(142, 142, 147, 0.6);
-  backdrop-filter: blue(20px);
+  backdrop-filter: blur(20px);
   width: 100%;
 
   @media (min-width: ${(p) => p.theme.screen.sm}) {
