@@ -20,6 +20,10 @@ const UserSchema = gql`
     coverImage: File
     coverImagePublicId: String
     isOnline: Boolean
+    address: String!
+    bio: String!
+    socials: [SocialPayload]
+    # skills:
     posts: [PostPayload]
     likes: [Like]
     comments: [Comment]
@@ -90,6 +94,10 @@ const UserSchema = gql`
     coverImage: String
     coverImagePublicId: String
     isOnline: Boolean
+    address: String!
+    bio: String!
+    socials: [SocialPayload]
+    # skills:
     posts: [PostPayload]
     likes: [Like]
     followers: [Follow]
