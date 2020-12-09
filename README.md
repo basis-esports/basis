@@ -1,8 +1,8 @@
 # BASIS 
 
-Create Social Network is a educational project. The main idea is to demonstrate how one can build a large scalable project with Javascript. However you get the core functionality of social network by running one command and then you can build more on top of that.
+Building this based on the Create Social Network (see [Create-Social-Network](https://github.com/DimiMikadze/create-social-network/)) project. This a large, scalable project with Javascript and trying to build on top of that base.
 
-Repository is divided into three main packages:
+Repository is divided into two main packages:
 
 - **api** This package contains API for the app, built with Nodejs, Express, GraphQL, Apollo Server and MongoDB with Mongoose.
 - **frontend** Is a frontend for the app, built with React, GraphQL, Apollo Client and Styled Components.
@@ -21,6 +21,7 @@ Repository is divided into three main packages:
 ## To-Do
 
 - **Profile** Update format of the profile page to include user details and links to other accounts such as Twitch, YouTube, etc.
+  - See ```frontend/src/pages/EditProfile``` for Cardzilla app that I want to iterate on and incorporate into the profile page
 - **Posts** Implement hyperlinking and thumbnails in posts
 
 ## Quick Installation
