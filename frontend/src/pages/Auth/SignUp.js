@@ -127,12 +127,12 @@ const SignUp = ({ history, refetch }) => {
 
       <Welcome>
         <div>
-          <Heading color="white">Connect with friends and the world around you.</Heading>
+          <Heading color="white">Connect with friends and pros around the world.</Heading>
         </div>
 
-        <p>See photos and updates from your friends.</p>
-        <p>Follow your interests.</p>
-        <p>Hear what people are talking about.</p>
+        <p>See stats, highlights and updates from your friends.</p>
+        <p>Follow your favorite players.</p>
+        <p>Hear the latest on recruiting for college and the pros.</p>
       </Welcome>
 
       <Form>
