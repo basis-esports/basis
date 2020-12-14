@@ -23,7 +23,7 @@ Repository is divided into two main packages:
 - **Profile** Update format of the profile page to include user details and links to other accounts such as Twitch, YouTube, etc.
   - See ```frontend/src/pages/EditProfile``` for Cardzilla app that I want to iterate on and incorporate into the profile page
 - **Posts** Implement hyperlinking and thumbnails in posts
-- **MongoDB** Setup local/cloud mongoDB to replace current demo version
+- ~~**MongoDB** Setup local/cloud mongoDB to replace current demo version~~
 
 ## Quick Installation
 
