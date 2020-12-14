@@ -48,6 +48,7 @@ const userSchema = new Schema(
       type: String,
       required: true,
     },
+    /*
     socials: [
       {
         type: Schema.Types.ObjectId,
@@ -55,6 +56,7 @@ const userSchema = new Schema(
       },
     ],
     skills: [{}],
+    */
     posts: [
       {
         type: Schema.Types.ObjectId,

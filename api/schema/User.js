@@ -22,7 +22,7 @@ const UserSchema = gql`
     isOnline: Boolean
     address: String!
     bio: String!
-    socials: [SocialPayload]
+    # socials: [SocialPayload]
     # skills:
     posts: [PostPayload]
     likes: [Like]
@@ -96,7 +96,7 @@ const UserSchema = gql`
     isOnline: Boolean
     address: String!
     bio: String!
-    socials: [SocialPayload]
+    # socials: [SocialPayload]
     # skills:
     posts: [PostPayload]
     likes: [Like]
