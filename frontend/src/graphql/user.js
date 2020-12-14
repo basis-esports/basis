@@ -13,9 +13,6 @@ const userPayload = `
   imagePublicId
   coverImage
   coverImagePublicId
-  address
-  bio
-  socials
   createdAt
 `;
 

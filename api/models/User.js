@@ -40,23 +40,6 @@ const userSchema = new Schema(
       type: Boolean,
       default: false,
     },
-    address: {
-      type: String,
-      required: true,
-    },
-    bio: {
-      type: String,
-      required: true,
-    },
-    /*
-    socials: [
-      {
-        type: Schema.Types.ObjectId,
-        ref: 'Social',
-      },
-    ],
-    skills: [{}],
-    */
     posts: [
       {
         type: Schema.Types.ObjectId,

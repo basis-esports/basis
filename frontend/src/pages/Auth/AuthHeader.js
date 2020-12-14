@@ -18,7 +18,7 @@ const Root = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 80px;
+  height: 50px;
   background-color: rgba(142, 142, 147, 0.6);
   backdrop-filter: blur(20px);
 `;
