@@ -126,6 +126,13 @@ const ProfileInfo = ({ user }) => {
             </FollowAndMessage>
           )}
         </FullName>
+        <Buttons>
+          <Link exact activeClassName="selected" to={generatePath(Routes.EDIT)}>
+            <Button text type="button">
+              Edit Profile
+            </Button>
+          </Link>
+        </Buttons>
       </ProfileImage>
 
       <Info>
