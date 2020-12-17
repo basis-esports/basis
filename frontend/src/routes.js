@@ -10,6 +10,8 @@ export const RESET_PASSWORD = '/reset-password';
 
 export const USER_PROFILE = '/:username';
 
+export const EDIT = '/edit';
+
 export const EXPLORE = '/explore';
 
 export const PEOPLE = '/people';
