@@ -133,7 +133,7 @@ const ProfileInfo = ({ user }) => {
           )}
         </FullName>
         <Buttons>
-          <Link exact activeClassName="selected" to={generatePath(Routes.EDIT)}>
+          <Link exact activeclassname="selected" to={generatePath(Routes.EDIT)}>
             <Button text type="button">
               Edit Profile
             </Button>
