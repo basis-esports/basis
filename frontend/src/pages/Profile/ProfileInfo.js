@@ -9,6 +9,7 @@ import { IS_USER_ONLINE_SUBSCRIPTION } from 'graphql/user';
 import { H1 } from 'components/Text';
 import { Spacing } from 'components/Layout';
 import Follow from 'components/Follow';
+import { Button } from 'components/Form';
 import ProfileImageUpload from './ProfileImageUpload';
 import ProfileCoverUpload from './ProfileCoverUpload';
 
@@ -83,6 +84,11 @@ const List = styled.div`
   @media (min-width: ${(p) => p.theme.screen.md}) {
     padding: 0 ${(p) => p.theme.spacing.lg};
   }
+`;
+
+const Buttons = styled.div`
+  display: flex;
+  flex-direction: row;
 `;
 
 /**
