@@ -146,6 +146,14 @@ const Mutation = {
     return newPost;
   },
   /**
+   * Adds a media preview on a post from an url
+   * @param {String} url        The url of the media
+   * @param {DOMElement} node   The node containing the said url
+   * @param {String} mediaSize  Size of the thumbnail
+   * @return {Promise}
+  */
+ 
+  /**
    * Deletes a user post
    *
    * @param {string} id
