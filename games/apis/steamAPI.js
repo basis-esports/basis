@@ -1,3 +1,14 @@
+import React from 'react';
+import mongoose from 'mongoose';
+import fetch from 'node-fetch';
+
+const Schema = mongoose.Schema;
+
+const steamSchema = Schema(
+    {
+
+    }
+);
 
 // const csGOstatgrab = () => {
 //   HTTP.call(
@@ -15,3 +26,4 @@
 // };
 
 // export default csGOstatgrab;
+export default steamSchema;

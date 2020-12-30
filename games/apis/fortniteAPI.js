@@ -1,4 +1,14 @@
+import React from 'react';
+import mongoose from 'mongoose';
+import fetch from 'node-fetch';
 
+const Schema = mongoose.Schema;
+
+const fortniteSchema = Schema(
+    {
+        
+    }
+);
 // export const getFortniteData = user =>
 //     HTTP.call(
 //         'GET',
@@ -18,3 +28,5 @@
 //             }
 //         }
 //     );
+
+export default fortniteSchema;
