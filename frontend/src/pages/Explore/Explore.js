@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { generatePath } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
 
-import { Container } from 'components/Layout';
+import { Container, Content } from 'components/Layout';
 import ExploreCard from './ExploreCard';
 import Skeleton from 'components/Skeleton';
 import PostPopup from 'components/PostPopup';
@@ -114,11 +114,13 @@ const Explore = () => {
   };
 
   return (
-    <Root maxWidth="md">
-      <Head title="Explore New Posts and Users" />
+    <Content>
+      <Root maxWidth="md">
+        <Head title="Explore New Posts and Users" />
 
-      {renderContent()}
-    </Root>
+        {renderContent()}
+      </Root>
+    </Content>
   );
 };
 

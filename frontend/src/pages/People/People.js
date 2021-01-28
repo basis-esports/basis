@@ -1,7 +1,7 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-import { Container } from 'components/Layout';
+import { Container, Content } from 'components/Layout';
 import Skeleton from 'components/Skeleton';
 import { Loading } from 'components/Loading';
 import Empty from 'components/Empty';
@@ -89,11 +89,13 @@ const People = () => {
   };
 
   return (
-    <Root maxWidth="md">
-      <Head title="Find new People" />
+    <Content>
+      <Root maxWidth="md">
+        <Head title="Find new People" />
 
-      {renderContent()}
-    </Root>
+        {renderContent()}
+      </Root>
+    </Content>
   );
 };
 
