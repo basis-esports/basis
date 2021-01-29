@@ -7,7 +7,7 @@ import { A } from 'components/Text';
 import PostPopup from 'components/PostPopup';
 import Modal from 'components/Modal';
 import PostCard from 'components/PostCard';
-import { Spacing, Container } from 'components/Layout';
+import { Spacing, Container, Content } from 'components/Layout';
 import { Loading } from 'components/Loading';
 import InfiniteScroll from 'components/InfiniteScroll';
 import Skeleton from 'components/Skeleton';
@@ -21,6 +21,10 @@ import { useStore } from 'store';
 import { HOME_PAGE_POSTS_LIMIT } from 'constants/DataLimit';
 
 import * as Routes from 'routes';
+
+const Root = styled(Container)`
+  margin-top: ${(p) => p.theme.spacing.lg};
+`;
 
 const Empty = styled.div`
   padding: ${(p) => p.theme.spacing.sm};
@@ -120,15 +124,17 @@ const Home = () => {
   };
 
   return (
-    <Container maxWidth="sm">
-      <Head />
+    <Content>
+      <Root maxWidth="sm">
+        <Head />
 
-      <Spacing top="lg" />
+        <Spacing top="lg" />
 
-      <CreatePost />
+        <CreatePost />
 
-      {renderContent()}
-    </Container>
+        {renderContent()}
+      </Root>
+    </Content>
   );
 };
 
