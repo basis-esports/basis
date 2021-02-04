@@ -7,6 +7,7 @@ import { StoreProvider } from 'store';
 
 import 'normalize.css';
 import theme from 'theme';
+import '@fontsource/roboto'; // roboto font for material-ui
 
 import App from 'components/App/App';
 

@@ -58,17 +58,24 @@ const Navigation = () => {
         </ListItem>
       </Link>
 
-      <Link exact activeClassName="selected" to={Routes.EXPLORE}>
-        <ListItem>
-          <ExploreIcon width={20} />
-          <Name>Explore</Name>
-        </ListItem>
-      </Link>
+      {/*<Link exact activeClassName="selected" to={Routes.EXPLORE}>*/}
+      {/*  <ListItem>*/}
+      {/*    <ExploreIcon width={20} />*/}
+      {/*    <Name>Explore</Name>*/}
+      {/*  </ListItem>*/}
+      {/*</Link>*/}
 
-      <Link exact activeClassName="selected" to={Routes.PEOPLE}>
+      {/*<Link exact activeClassName="selected" to={Routes.PEOPLE}>*/}
+      {/*  <ListItem>*/}
+      {/*    <PeopleIcon />*/}
+      {/*    <Name>People</Name>*/}
+      {/*  </ListItem>*/}
+      {/*</Link>*/}
+
+      <Link exact activeClassName="selected" to={generatePath(Routes.MESSAGES, { userId: Routes.NEW_ID_VALUE })}>
         <ListItem>
-          <PeopleIcon />
-          <Name>People</Name>
+          <EnvelopeIcon width={18} />
+          <Name>Messages</Name>
         </ListItem>
       </Link>
 
@@ -76,13 +83,6 @@ const Navigation = () => {
         <ListItem>
           <NotificationIcon width={18} />
           <Name>Notifications</Name>
-        </ListItem>
-      </Link>
-
-      <Link exact activeClassName="selected" to={generatePath(Routes.MESSAGES, { userId: Routes.NEW_ID_VALUE })}>
-        <ListItem>
-          <EnvelopeIcon width={18} />
-          <Name>Messages</Name>
         </ListItem>
       </Link>
     </List>

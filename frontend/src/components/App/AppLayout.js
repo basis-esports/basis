@@ -87,11 +87,12 @@ const AppLayout = ({ location, authUser }) => {
         <SideBar isOpen={isSideBarOpen} sideBarRef={sideBarRef} />
 
         <Switch>
-          <Route exact path={Routes.HOME} component={Home} />
+          {/*<Route exact path={Routes.HOME} component={Home} />*/}
 
-          <Route exact path={Routes.EXPLORE} component={Explore} />
+          {/*<Route exact path={Routes.EXPLORE} component={Explore} />*/}
 
-          <Route exact path={Routes.PEOPLE} component={People} />
+          {/*<Route exact path={Routes.PEOPLE} component={People} />*/}
+          <Route exact path={Routes.HOME} component={People} />
 
           <Route exact path={Routes.NOTIFICATIONS} component={Notifications} />
 

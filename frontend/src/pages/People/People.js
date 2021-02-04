@@ -16,6 +16,7 @@ import { PEOPLE_PAGE_USERS_LIMIT } from 'constants/DataLimit';
 import { useStore } from 'store';
 
 import { useQuery } from '@apollo/client';
+import * as Routes from "../../routes";
 
 const Root = styled(Container)`
   margin-top: ${(p) => p.theme.spacing.lg};
@@ -44,6 +45,7 @@ const People = () => {
     skip: 0,
     limit: PEOPLE_PAGE_USERS_LIMIT,
   };
+  console.log('variables: ', variables);
   const { data, loading, fetchMore, networkStatus } = useQuery(GET_USERS, {
     variables,
     notifyOnNetworkStatusChange: true,
@@ -59,6 +61,7 @@ const People = () => {
     }
 
     const { users, count } = data.getUsers;
+    console.log(users, count);
     if (!users.length > 0) return <Empty text="No people yet." />;
 
     return (
