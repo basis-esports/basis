@@ -147,6 +147,7 @@ export const GET_USERS = gql`
         fullName
         username
         image
+        coverImage
         following {
           id
           user

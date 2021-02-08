@@ -9,28 +9,30 @@ import { CREATE_FOLLOW, DELETE_FOLLOW } from 'graphql/follow';
 
 import { NotificationType } from 'constants/NotificationType';
 import { HOME_PAGE_POSTS_LIMIT } from 'constants/DataLimit';
+import Button from '@material-ui/core/Button';
 
 import { useStore } from 'store';
 
 import { useNotifications } from 'hooks/useNotifications';
+import {Link as RouterLink} from "react-router-dom";
 
-const Button = styled.button`
-  height: 27px;
-  cursor: pointer;
-  outline: none;
-  font-size: ${(p) => p.theme.font.size.xxs};
-  font-weight: ${(p) => p.theme.font.weight.bold};
-  transition: background-color 0.2s, border-color 0.1s;
-  border-radius: ${(p) => p.theme.radius.sm};
-  color: ${(p) => !p.isFollowing && p.theme.colors.white};
-  padding: ${(p) => p.theme.spacing.xxs} ${(p) => p.theme.spacing.xs};
-  border: ${(p) => (p.isFollowing ? `1px solid ${p.theme.colors.border.main}` : '0')};
-  background-color: ${(p) => (p.isFollowing ? 'transparent' : p.theme.colors.primary.main)};
-
-  &:hover {
-    border-color: ${(p) => p.theme.colors.border.dark};
-  }
-`;
+// const Button = styled.button`
+//   height: 27px;
+//   cursor: pointer;
+//   outline: none;
+//   font-size: ${(p) => p.theme.font.size.xxs};
+//   font-weight: ${(p) => p.theme.font.weight.bold};
+//   transition: background-color 0.2s, border-color 0.1s;
+//   border-radius: ${(p) => p.theme.radius.sm};
+//   color: ${(p) => !p.isFollowing && p.theme.colors.white};
+//   padding: ${(p) => p.theme.spacing.xxs} ${(p) => p.theme.spacing.xs};
+//   border: ${(p) => (p.isFollowing ? `1px solid ${p.theme.colors.border.main}` : '0')};
+//   background-color: ${(p) => (p.isFollowing ? 'transparent' : p.theme.colors.primary.main)};
+//
+//   &:hover {
+//     border-color: ${(p) => p.theme.colors.border.dark};
+//   }
+// `;
 
 /**
  * Component for rendering follow button
@@ -86,7 +88,15 @@ const Follow = ({ user }) => {
   };
 
   return (
-    <Button onClick={handleClickFollow} disabled={loading} isFollowing={isFollowing}>
+    <Button
+      fullWidth
+      disableElevation
+      onClick={handleClickFollow}
+      variant="contained"
+      disabled={loading}
+      isFollowing={isFollowing}
+      color={isFollowing ? "secondary" : "primary"}
+    >
       {isFollowing ? 'Following' : 'Follow'}
     </Button>
   );

@@ -45,7 +45,7 @@ const People = () => {
     skip: 0,
     limit: PEOPLE_PAGE_USERS_LIMIT,
   };
-  console.log('variables: ', variables);
+
   const { data, loading, fetchMore, networkStatus } = useQuery(GET_USERS, {
     variables,
     notifyOnNetworkStatusChange: true,
@@ -61,7 +61,6 @@ const People = () => {
     }
 
     const { users, count } = data.getUsers;
-    console.log(users, count);
     if (!users.length > 0) return <Empty text="No people yet." />;
 
     return (
