@@ -124,8 +124,8 @@ export default {
    * Radius
    */
   radius: {
-    sm: '3px',
-    md: '6px',
+    sm: '6px',
+    md: '9px',
     lg: '12px',
   },
 

@@ -14,6 +14,8 @@ import Avatar from '@material-ui/core/Avatar';
 import { Link as RouterLink } from 'react-router-dom';
 import Button from '@material-ui/core/Button';
 import { grey } from '@material-ui/core/colors';
+import { borders } from '@material-ui/system';
+import { shadows } from '@material-ui/system';
 
 import * as Routes from 'routes';
 import Follow from "../../components/Follow";
@@ -50,10 +52,12 @@ const PeopleCard = ({ user }) => {
   const useStyles = makeStyles((theme) => ({
       root: {
         maxWidth: 345,
-        height: 400
+        height: 400,
+        borderRadius: 9,
+        boxShadow: 3,
       },
       media: {
-        height: 100,
+        height: 200,
         width: 'auto',
       },
       avatar: {
@@ -75,15 +79,15 @@ const PeopleCard = ({ user }) => {
       {coverImage ?
         <CardMedia
           className={classes.media}
-          image={coverImage}
+          image={image}
           title="User Profile" />
         :
         <Avatar alt={fullName} src={image} variant="square" className={classes.media} />
       }
-      <Avatar alt={fullName} src={image} className={classes.avatar} >
+      {/*<Avatar alt={fullName} src={image} className={classes.avatar} >*/}
         {/* Fallback to Initial Letters*/}
-        {!image && splitFullName()}
-      </Avatar>
+        {/*{!image && splitFullName()}*/}
+      {/*</Avatar>*/}
       <CardContent>
         <Box mt={1} mb={3}>
           <Typography variant="h6" component="h6" align="center">
@@ -120,6 +124,7 @@ const PeopleCard = ({ user }) => {
           variant="contained"
           component={RouterLink}
           color="primary"
+          borderRadius={9}
           to={generatePath(Routes.USER_PROFILE, { username })}>
           View
         </Button>
